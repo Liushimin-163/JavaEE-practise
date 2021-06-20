@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checkCodePresentation</title>
+</head>
+<body>
+<form action="">
+    Username: <input type="text" name="username"><br/>
+   Password: <input type="password" name="password"><br/>
+    Verified Code:<input type="text" name="checkCode" style="width:50px">
+    <img src="/day03_war_exploded/checkCode" onclick="changeImg(this)"><br/>
+    <input type="submit" value="register">
+    <script type="text/javascript"> function changeImg(obj){
+        obj.src="/day03_war_exploded/checkCode?t="+new Date().getTime();
+    }
+    </script>
+</form>
+</body>
+</html>
